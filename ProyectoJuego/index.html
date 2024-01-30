@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="IMG/Icono.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="ES">        
+    <meta name="responder a" content="correo@correo.com">
+    <meta name="revision" content="Enero 30 de 2024">
+    <meta name="description" content="Descripción: Fives Fever index/">
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+    <meta name="author" content="Wilson Fernández" />
+    <meta name="copyright" content="Wilson Fernández" />
+    <meta name="robots" content="index,follow" />
+    <title>Fives Fever</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1><del> F I V E S </del>&emsp;<br>&emsp;<del> F E V E R </del></h1>
+        <hr>
+    </header>
+    <!-- Contenedor de los elementos principales -->
+    <container>
+        <!-- Sección izquierda, contiene las instrucciones del juego -->
+        <aside id="left">
+            <h2>Instrucciones</h2>
+            <p>
+                ¡Bienvenidos a Fives Fiver.<br> 
+                El objetivo es ser el primero en colocar 5 (cinco) marcas consecutivas en línea, ya sea horizontal, vertical o en diagonal.
+            </p>
+            <p>
+                <b>Tablero de juego</b><br>
+                El tablero tiene 900 celdas seleccionables, ordenadas en 30 filas y 30 columnas
+            </p>
+            <p>
+                <b>Cómo Jugar</b><br>
+                Los jugadores se turnan para dejar sus marcas en el tablero. El jugador 1 usa la marca "O" y el jugador 2 la marca "X". <br>
+                Para dejar una marca, simplemente haz clic en la celda donde deseas colocarla. No se pueden colocar marcas en celdas ocupadas.
+            </p>
+            <p>
+                <b>Ganar el Juego</b><br>
+                El primer jugador en lograr 5 (cinco) marcas consecutivas en línea horizontal, vertical o diagonal, gana el juego. <br>
+                Una línea se considera consecutiva si todas las marcas están una al lado de la otra, sin celdas vacías o marcas de otro jugador entre ellas.
+            </p>
+            <p>
+                <b>Empate</b><br>
+                Si todas las celdas están ocupadas y ninguno de los jugadores logra completar 5 (cinco) marcas en línea, o ambos jugadores consideran 
+                que el juego no tiene solución, pueden seleccionar el boton de juego nuevo para iniciar una nueva partida.
+            </p>
+        </aside>
+        
+        <!-- Sección central, contiene el tablero de juego -->
+        <section>
+            <section id="tablero"></section>
+            <br>
+            <a href="index.html">
+                <button id="game">
+                    Juego nuevo
+                </button>
+            </a>
+        </section>
+        
+        <!-- Sección izquierda, contiene el indicador del tueno actual -->
+        <aside id="right">
+            <h2 id="estado">TURNO </h2><br>
+            <hr>
+            <p id="turno"></p>
+            <hr><br><br>
+        </aside>
+    </container>
+</body>
+</html>
